@@ -28,5 +28,5 @@ function initialize() {
   }
   window.onload=function() {
    initialize();
-   handleOnLoad()
+   handleOnLoad();
   }

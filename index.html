@@ -6,11 +6,11 @@
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="index.css">
 	<title>History</title>
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANiLvfygUtV1a85fdhhK7s2D328zj_4QQ&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
+	<script defer src="js/hover.js"></script>
+	<script defer src="js/btnScroll.js"></script>
+	<script defer src="js/map.js"></script>
+	<script defer src="js/menu.js"></script>	
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANiLvfygUtV1a85fdhhK7s2D328zj_4QQ&callback=initMap&libraries=&v=weekly"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -47,8 +47,10 @@
 				</ul>
 			</header>
 			<div class="main_box">
-				<h1>경복궁</h1>
-				<h2>GyeongBokGung<br>Palace</h2>
+				<div>
+					<h1>경복궁</h1>
+					<h2>GyeongBokGung<br>Palace</h2>
+				</div>
 			</div>
 			<img src="img/directionIcon.png" alt="icon" class="main_button">
 			<p class="mail"><a href="https://blog.naver.com/jaeeun_98">jaeeun@naver.com</a></p>
@@ -152,21 +154,17 @@
 								<div>
 									<div class="square f"></div>
 									<img src="img/영추문.jpg" alt="영추문" class="f_img">
-									<div class="jsBox f_img"></div>
-									<div class="jsText fText">영추문</div>
+									<div class="jsBox f_img">영추문</div>
 								</div>
 								<div>
 									<div class="square t"></div>
 									<img src="img/건춘문.jpg" alt="건춘문" class="t_img">
-									<div class="jsBox t_img"></div>
-									<div class="jsText tText">건춘문</div>
+									<div class="jsBox t_img">건춘문</div>
 								</div>
 								<div>
 									<div class="square th"></div>
-									<img src="img/신무문.jpg" alt="신무문"
-									class="th_img">
-									<div class="jsBox th_img"></div>
-									<div class="jsText thText">신무문</div>
+									<img src="img/신무문.jpg" alt="신무문" class="th_img">
+									<div class="jsBox th_img">신무문</div>
 								</div>
 							</div>
 						</div>
@@ -205,7 +203,7 @@
 						<img src="img/교태전.jpg" alt="교태전" class="left jsImg none">
 						<p class="text right padding">
 							궁궐의 침전영역.<br>
-							경복궁에는 왕과 왕비의 침전영역이 둘로 구분되어 있다.<br>
+							왕과 왕비의 침전영역이 둘로 구분되어 있다.<br>
 							하나는 왕의 침전인 강녕전이고,<br>
 							다른 하나는 왕비의 침전인 교태전이다.<br>
 							궁궐에서 침전은 왕과 왕비가 일상생활을 하는 곳이며,<br>
@@ -271,7 +269,7 @@
 										- 5호선 광화문역 2번출구 도보 약 10분
 									</p>
 									<p class="right">
-										<b>경복궁 주소 및 연략처</b><br>
+										<b>경복궁 주소 및 연락처</b><br>
 										- (우 : 03045) 서울특별시 종로구 사직로 161<br>
 										- (02) 3700 - 3900-1
 									</p>
@@ -315,40 +313,7 @@
 				</div>
 			</div>
 		</section>
-		<div class="btnRemote">
-			<img src="img/remoteIcon.png" alt="remoteIcon">
-		</div>
-		<div class="remote">
-			<button class="close">&#9746;</button>
-			<div class="btn">
-				<button class="btnTop">&#9651;</button>
-				<button class="btnBottom">&#9661;</button>
-			</div>
-			<div>
-				<button class="btnNum">1</button>
-				<button class="btnNum">2</button>
-				<button class="btnNum">3</button>
-				<button class="btnNum">4</button>
-				<button class="btnNum">5</button>
-				<button class="btnNum">6</button>
-			</div>
-			<audio controls>
-				<source src="bgm.mp3" type="audio/mp3">
-			</audio>
-			</div>
-		</div>
-		<div class="sub_6">
-			<h3>JaeeunKwon, Portfolio</h3>
-			<img src="img/톰인사짤2.gif" alt="톰인사짤">
-			<h2>Thank You</h2>
-			<button class="modalClose">&#9746;</button>
-		</div>
 	</div><!-- wrap -->
-<script src="js/hover.js"></script>
-<script src="js/btnScroll.js"></script>
-<script src="js/map.js"></script>
-<script src="js/menu.js"></script>
-<script src="js/remote.js"></script>	
 
 </body>
 </html>

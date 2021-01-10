@@ -897,3 +897,17 @@ main, .sub_3 {
 }
 
 }	
+
+/*360*/
+@media(max-width:360px) {
+	.li {
+		font-size:13px;
+	}
+	.wrap {
+		width:100vw;
+	}
+	.sub_4 img {
+		width: 80%;
+		height: 200px;
+	}
+}

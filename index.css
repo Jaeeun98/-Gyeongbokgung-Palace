@@ -180,13 +180,13 @@ section > div {
 .sub_1_img_2 {
 	top:47%;
 	left:15%;
-	z-index:-7;
+	z-index:-1;
 }
 
 .sub_1_img_3 {
 	top:54%;
 	left:40%;
-	z-index:-8;
+	z-index:-1;
 }
 
 .sub_1 p {
@@ -289,7 +289,7 @@ letter-spacing:2px;
 }
 
 .jsImg {
-	transition-duration:1s;
+	transition-duration:0.3s;
 	cursor:pointer;
 }
 
@@ -477,6 +477,7 @@ letter-spacing:2px;
 	background-image:url(img/sub_5_background.png);
 	background-repeat: no-repeat;
 	background-position : center;
+	background-size: cover;
 	position:unset;
 }
 
@@ -699,12 +700,20 @@ footer p {
 	}
 }
 
+@media(max-width:850px) {
+	.wrap {
+		width:97vw;
+	}
+	.sub_1 img {
+		height:37%;
+	}
+}
+
 /*800*/
 @media(max-width:800px) {
-.wrap {
-	width:97.5vmax;
-}
+
 /*main*/
+
 .logo {
 	display:none;
 }
@@ -718,30 +727,11 @@ header {
 	margin:0;
 	float:none;
 }
-.sub_menu {
-	top:60px;
-}
-.main_box > h1 {
-	left:38%;
-}
-.main_box h2 {
-	left:41.5%;
-}
 
 /*sub_1*/
-.sub_1 img {
-	height:40%;
-}
+
 .sub_1_img_1 {
 	top:30%;
-}
-
-/*sub_3*/
-.sub_3 h1 {
-	left:27%;
-}
-.sub_3 p {
-	left:30%;
 }
 
 /*sub_4*/
@@ -847,50 +837,36 @@ header {
     bottom: 8%;
  }
 }
- /*800*/
 
+/*690*/
+@media(max-width:690px) {
+	.sub_1 {
+		display:none;
+	}
+}
+
+
+ /*500*/
 @media(max-width:500px) {
-
-/*main*/
-
-.main_box > h1 {
-	left:30%;
+/*main*/ 
+main, .sub_3 {
+	background-attachment: fixed;
 }
-
-.main_box h2 {
-	left:35.5%;
+.main_button {
+	display:none;
 }
-
-/*sub_1*/
-
-.sub_1 h1 {
-	left:24%;
-}
-
-.sub_1 h2 {
-	left:14%;
-	letter-spacing:2px;
-}
-
-.sub_1 img {
-	width:100%;
-	left:0;
-}
-
-/*sub_3*/
-
-.sub_3 h1 {
-	left:15%;
-}
-
-.sub_3 p {
-	left:19.5%;
-}
-
 /*sub_4*/
-
+.sub_4 {
+	height:4650px;
+}
+.background {
+	padding-top:5%;
+}
+.sub_4 .box {
+	height:400px;
+}
 .sub_4 img, .sub_4 .text {
-	width:370px;
+	width:330px;
 	margin-left:0;
 }
 
@@ -898,58 +874,8 @@ header {
 	font-size:15px;
 }
 
-.background_gray img, .square, .jsBox {
-	width:120px;
-}
-
-.f {
-	left:3%;
-}
-
-.f_img {
-	left:4%;
-}
-
-.fText {
-	left:10%;
-}	
-
-.t {
-	left:34.5%
-}
-
-.t_img {
-	left:35.5%;
-}
-
-.tText {
-    left:41.5%;
-}
-
-.th {
-	right:6%;
-}
-
-.th_img {
-	right:4.5%;
-}
-
-.thText {
-    right:8%;
-}
-
-.box_2_text p {
-	font-size:12px;
-	top:40px;
-}
-
-.box_2_img img {
-	left:0;
-	width:150px;
-}
-
 .box_2 {
-	margin-top:50px;
+	display:none;
 }
 
 /*sub_5*/
